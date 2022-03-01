@@ -2,6 +2,10 @@ import { VFC } from "react"
 
 import { TEventProps } from "@/types/TEvent"
 
+import { Spacer } from "@/components/ui/Spacer"
+
+import { LinkCard } from "./LinkCard"
+
 export const TEvent: VFC<TEventProps> = ({ tEvent }) => {
   const { title, startAt, url } = tEvent
 
@@ -12,12 +16,14 @@ export const TEvent: VFC<TEventProps> = ({ tEvent }) => {
   const time = `${hour}:${minute}`
 
   return (
-    <div>
-      <div>
+    <div className="flex flex-col">
+      <div className="flex items-center px-2 text-xl font-bold">
         <time>{time}</time>
-        <span>{title}</span>
+        <Spacer size={4} />
+        <span className="truncate">{title}</span>
       </div>
-      <p>{url}</p>
+      <Spacer size={2} />
+      <LinkCard url={url} />
     </div>
   )
 }
