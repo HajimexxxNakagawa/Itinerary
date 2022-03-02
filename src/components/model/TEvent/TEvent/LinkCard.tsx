@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { VFC } from "react"
 
-import { OgpData } from "@/types/OgpData"
+import { useOgp } from "@/hooks/useOgp"
 
-import { mockOgpData0 } from "@/mocks/OgpData"
+import { OgpData } from "@/types/OgpData"
 
 // Presentational Component
 interface LinkCardViewProps {
@@ -86,10 +86,12 @@ interface LinkCardProps {
 }
 
 export const LinkCard: VFC<LinkCardProps> = ({ url }) => {
-  const ogp = getOgp(url)
+  const { data, error } = useOgp(url)
 
-  return <LinkCardView ogp={ogp} />
+  // for debug
+  if (error) console.log(error)
+
+  if (!data) return <>...loading</>
+
+  return <LinkCardView ogp={data} />
 }
-
-// 一旦モックデータを返すだけの実装にとどめておく
-const getOgp = (url: string) => mockOgpData0
