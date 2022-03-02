@@ -5,6 +5,8 @@ import { useOgp } from "@/hooks/useOgp"
 
 import { OgpData } from "@/types/OgpData"
 
+import { LinkCardLoading } from "@/components/model/TEvent/TEvent/LinkCardLoading"
+
 // Presentational Component
 interface LinkCardViewProps {
   ogp: OgpData
@@ -91,7 +93,7 @@ export const LinkCard: VFC<LinkCardProps> = ({ url }) => {
   // for debug
   if (error) console.log(error)
 
-  if (!data) return <>...loading</>
+  if (!data) return <LinkCardLoading />
 
   return <LinkCardView ogp={data} />
 }
