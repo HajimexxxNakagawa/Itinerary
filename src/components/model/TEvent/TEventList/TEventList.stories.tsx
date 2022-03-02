@@ -1,9 +1,9 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 import React from "react"
 
-import { mockTEventList } from "@/mocks/TEvent"
+import { TEventList } from "@/components/model/TEvent/TEventList"
 
-import { TEventList } from "./TEventList"
+import { mockTEventList } from "@/mocks/TEvent"
 
 export default {
   title: "Model/TEvent/TEventList",

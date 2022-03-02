@@ -2,7 +2,7 @@ import { VFC } from "react"
 
 import { TDayProps } from "@/types/TDay"
 
-import { TEventList } from "../../TEvent/TEventList"
+import { TEventList } from "@/components/model/TEvent/TEventList"
 
 const DAY_OF_WEEK = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 

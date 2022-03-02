@@ -1,4 +1,4 @@
-import { TEvent } from "./TEvent"
+import { TEvent } from "@/types/TEvent"
 
 export type TDay = {
   date: Date

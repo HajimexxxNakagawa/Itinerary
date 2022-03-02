@@ -1,14 +1,14 @@
 import { ComponentStory, ComponentMeta } from "@storybook/react"
 import React from "react"
 
+import { LinkCardView } from "@/components/model/TEvent/TEvent/LinkCard"
+
 import {
   mockOgpData0,
   mockOgpData1,
   mockOgpData2,
   mockOgpData3,
 } from "@/mocks/OgpData"
-
-import { LinkCardView } from "./LinkCard"
 
 export default {
   title: "Model/TEvent/LinkCard",

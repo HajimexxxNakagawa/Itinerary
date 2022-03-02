@@ -2,9 +2,9 @@ import { VFC } from "react"
 
 import { TEventListProps } from "@/types/TEvent"
 
-import { Spacer } from "@/components/ui/Spacer"
+import { TEvent } from "@/components/model/TEvent/TEvent"
 
-import { TEvent } from "../TEvent"
+import { Spacer } from "@/components/ui/Spacer"
 
 export const TEventList: VFC<TEventListProps> = ({ tEvents }) => {
   return (

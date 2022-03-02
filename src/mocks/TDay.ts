@@ -1,6 +1,10 @@
 import { TDay } from "@/types/TDay"
 
-import { mockTEventList, mockTEventList1, mockTEventList2 } from "./TEvent"
+import {
+  mockTEventList,
+  mockTEventList1,
+  mockTEventList2,
+} from "@/mocks/TEvent"
 
 export const mockTDay: TDay = {
   date: new Date("26 January 2022 UTC"),

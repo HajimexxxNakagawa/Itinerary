@@ -2,9 +2,9 @@ import { VFC } from "react"
 
 import { TEventProps } from "@/types/TEvent"
 
-import { Spacer } from "@/components/ui/Spacer"
+import { LinkCard } from "@/components/model/TEvent/TEvent/LinkCard"
 
-import { LinkCard } from "./LinkCard"
+import { Spacer } from "@/components/ui/Spacer"
 
 export const TEvent: VFC<TEventProps> = ({ tEvent }) => {
   const { title, startAt, url } = tEvent

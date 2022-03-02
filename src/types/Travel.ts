@@ -1,4 +1,4 @@
-import { TDay } from "./TDay"
+import { TDay } from "@/types/TDay"
 
 export type Travel = {
   title: string
