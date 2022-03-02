@@ -7,3 +7,5 @@ export const mockTEvent: TEvent = {
 }
 
 export const mockTEventList = [mockTEvent, mockTEvent, mockTEvent]
+export const mockTEventList1 = [mockTEvent, mockTEvent]
+export const mockTEventList2 = [mockTEvent]
